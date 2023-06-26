@@ -20,7 +20,8 @@ public class TestaddTest {
 
   @Before
   public  void setUp() {
-    driver = new ChromeDriver();
+    ChromeOptions options = new ChromeOptions().setHeadless(true);
+    driver = new ChromeDriver(options);
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }
