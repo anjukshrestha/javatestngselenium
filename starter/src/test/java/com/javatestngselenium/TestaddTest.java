@@ -21,7 +21,7 @@ public class TestaddTest {
 
   @Before
   public  void setUp() {
-    ChromeOptions options = new ChromeOptions().setHeadless(true);
+    ChromeOptions options = new ChromeOptions().addArguments("--headless=chrome");
     driver = new ChromeDriver(options);
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
