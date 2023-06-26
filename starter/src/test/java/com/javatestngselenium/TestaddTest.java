@@ -19,7 +19,7 @@ public class TestaddTest {
   private Map<String, Object> vars;
   JavascriptExecutor js;
 
-  @Before
+  @Before 
   public  void setUp() {
     ChromeOptions options = new ChromeOptions().addArguments("--headless=chrome");
     options.addArguments("--disable-dev-shm-usage");
