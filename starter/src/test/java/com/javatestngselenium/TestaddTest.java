@@ -22,6 +22,8 @@ public class TestaddTest {
   @Before
   public  void setUp() {
     ChromeOptions options = new ChromeOptions().addArguments("--headless=chrome");
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--no-sandbox");
     driver = new ChromeDriver(options);
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
